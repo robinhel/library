@@ -37,7 +37,7 @@ while (running)
     Console.WriteLine("2. Show book");
     Console.WriteLine("3. Delete book");
     Console.WriteLine("4. SeeAuthor");
-    Console.WriteLine("4. End program");
+    Console.WriteLine("5. End program");
     string input = Console.ReadLine();
 
     switch (input)
@@ -52,7 +52,18 @@ while (running)
             mylibrary.show();
             Console.WriteLine("Press ENTER to continue...");
             Console.ReadLine();
-
+            break;
+        case "3":
+            for (int i = 0; i < mylibrary.LibraryCapacity; i++)
+            {
+                if (mylibrary.Books[i] != null)
+                {
+                    Console.WriteLine($"index: {i} Titel: {mylibrary.Books[i].Titel}");
+                }
+            }
+            Console.Write("Enter index of book to remove:");
+            int Removeindex = Convert.ToInt32(Console.ReadLine());
+            mylibrary.Books[Removeindex] = null;
             break;
         case "4":
             mylibrary.ShowAuthor();
