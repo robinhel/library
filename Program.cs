@@ -36,6 +36,7 @@ while (running)
     Console.WriteLine("1. Add book");
     Console.WriteLine("2. Show book");
     Console.WriteLine("3. Delete book");
+    Console.WriteLine("4. SeeAuthor");
     Console.WriteLine("4. End program");
     string input = Console.ReadLine();
 
@@ -51,11 +52,23 @@ while (running)
             mylibrary.show();
             Console.WriteLine("Press ENTER to continue...");
             Console.ReadLine();
+
             break;
+        case "4":
+            mylibrary.ShowAuthor();
+            Console.WriteLine("Press ENTER to continue...");
+            Console.ReadLine();
+            break;
+        case "5":
+            Console.WriteLine("Goodbye!");
+            running = false;
+            break;
+
+
     }
 
 
 }
 
 
-            //(titel, author, isbn, category, stock)
+//(titel, author, isbn, category, stock)

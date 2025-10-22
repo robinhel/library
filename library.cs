@@ -87,6 +87,20 @@ class Library
         return NewBook;
     }
 
+    public void ShowAuthor()
+    {
+        for (int i = 0; i < LibraryCapacity; i++)
+        {
+            if (Books[i] != null)
+            {
+                Console.WriteLine($"position: {i + 1} has book {Books[i].Titel}");
+            }
+        }
+        Console.WriteLine("of wich book Author would you like to see?");
+        int AuthorIndex = Convert.ToInt32(Console.ReadLine());
+        Console.WriteLine(Books[AuthorIndex].Author);
+    }
+
     // public void AddNumbers(int x, int y)
     // {
     //     Console.WriteLine(x + y);

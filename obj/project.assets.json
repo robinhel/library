@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\hellg\\repos\\Library\\Library.csproj",
+      "projectUniqueName": "C:\\Users\\hellg\\repos\\library\\Library.csproj",
       "projectName": "Library",
-      "projectPath": "C:\\Users\\hellg\\repos\\Library\\Library.csproj",
+      "projectPath": "C:\\Users\\hellg\\repos\\library\\Library.csproj",
       "packagesPath": "C:\\Users\\hellg\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\hellg\\repos\\Library\\obj\\",
+      "outputPath": "C:\\Users\\hellg\\repos\\library\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\hellg\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -64,7 +64,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.413/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.414/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
